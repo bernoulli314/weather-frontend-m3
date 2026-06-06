@@ -1,24 +1,111 @@
 body{
-    background:#ffffff;
+
+    background:#110c17;
     font-family:Consolas,sans-serif;
+    color:white;
+
 }
 
-.card{
-    padding:25px;
+/* cards y su hover */
 
-    border-radius:20px;
-    border:5px solid rgb(8, 0, 65);
+.card{
+
+    padding:25px;
 
     background:linear-gradient(
         135deg,
-        #ac6cff,
-        #fed3f8
+        #110c17,
+        #1d0b1b
     );
 
-    color:rgb(255, 255, 255);
+    color:white;
+
     text-align:center;
 
-    box-shadow:0 10px 25px rgba(0, 35, 133, 0.4);
+    border:none;
+    border-radius:15px;
 
-    transition:transform .3s, box-shadow .3s;
+    box-shadow:
+        0 10px 25px rgba(0,35,133,.4);
+
+    transition:
+        transform 1.3s,
+        box-shadow 1.3s;
+}
+
+.card:hover{
+
+    transform:translateY(-20px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 110, 255, 0.532);
+
+}
+
+/* datos de las cards */
+
+.card h5{
+
+    font-size: 2.4rem;
+    font-weight:bold;
+    margin-bottom:15px;
+
+}
+
+.icono-planeta{
+
+    font-size:6rem;
+    margin-bottom:5px;
+
+}
+
+.temperatura{
+
+    font-size:2rem;
+    font-weight:bold;
+    color:#87cefa;
+    margin-bottom:10px;
+
+}
+
+.estado{
+
+    opacity:.8;
+    margin-bottom:20px;
+
+}
+
+/* aside */
+
+aside{
+
+    background:#1d0b1b;
+    color:white;
+
+}
+
+/* navbar */
+
+.navbar{
+
+    box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.4);
+
+}
+
+
+/* botones */
+
+.btn{
+
+    transition:
+        transform .3s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
 }

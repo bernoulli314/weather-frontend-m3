@@ -137,41 +137,114 @@ const todosLosPlanetas = [
     ...exoplanetas
 ];
 
+let planetasActuales = todosLosPlanetas;
+
 const contenedor =
 document.getElementById("contenedor_planetas");
 
-todosLosPlanetas.forEach(ciudad=>{
+const botonSS = document.querySelector(".btn-ss");
 
-    contenedor.innerHTML += `
+const botonExo = document.querySelector(".btn-exo");
 
-    <div class="col">
+function mostrarPlanetas(lista){
 
-        <div class="card text-center h-100">
+        // limpiar cards anteriores
 
-            <div class="card-body">
+        contenedor.innerHTML="";
 
-                <h5>${ciudad.nombre}</h5>
 
-                <div class="display-3">
-                    ${ciudad.icono}
+
+        lista.forEach(planeta=>{
+
+            const card = `
+
+            <div class="col">
+
+                <div class="card h-100">
+
+                    <div class="card-body">
+
+                        <h5>
+
+                            ${planeta.nombre}
+
+                        </h5>
+
+                        <div class="icono-planeta">
+
+                            ${planeta.icono}
+
+                        </div>
+
+                        <div class="temperatura">
+
+                            ${planeta.temp}
+
+                        </div>
+
+                        <p class="estado">
+
+                            ${planeta.estado}
+
+                        </p>
+
+                        <button
+                        class="btn btn-outline-info">
+
+                            Ver detalle
+
+                        </button>
+
+                    </div>
+
                 </div>
-
-                <h3>${ciudad.temp}</h3>
-
-                <p>${ciudad.estado}</p>
-
-                <a href="detalle.html?ciudad=${ciudad.nombre}"
-                   class="btn btn-primary">
-
-                    Ver detalle
-
-                </a>
 
             </div>
 
-        </div>
+            `;
 
-    </div>
-    
-    `
-});
+            contenedor.insertAdjacentHTML(
+                "beforeend",
+                card
+            );
+
+        });
+
+    }
+
+
+
+    // ==========================
+    // EVENTOS BOTONES
+    // ==========================
+
+    botonSS.addEventListener(
+        "click",
+        ()=>{
+
+            planetasActuales =
+            planetas_ss;
+
+            mostrarPlanetas(
+                planetasActuales
+            );
+
+        }
+    );
+
+
+    botonExo.addEventListener(
+        "click",
+        ()=>{
+
+            planetasActuales =
+            exoplanetas;
+
+            mostrarPlanetas(
+                planetasActuales
+            );
+
+        }
+    );
+
+mostrarPlanetas(planetasActuales);
