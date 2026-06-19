@@ -1,13 +1,13 @@
-// archivo: scss/abstracts/_variables.scss
-$color-primario: rgb(2, 30, 48);
-$color-secundario: rgb(58, 39, 230);
-$color-texto:  rgb(255, 255, 255);
-$color-destacado: rgb(255, 255, 255);
-$color-fondo: rgb(8, 8, 20);
+$bg-main: rgb(17, 12, 23);
+$bg-secondary: rgb(29, 11, 27);
 
-$color-exito: green ;
-$color-alerta: yellow ;
-$color-error: red ;
+$text-color: white;
+$temp-color: rgb(135, 206, 250);
 
-$radio: 8px;
-$fuente-general: Arial, sans-serif;
+$shadow-card:
+    0 10px 25px rgba(0,35,133,.4);
+
+$shadow-card-hover:
+    0 15px 30px rgba(0,110,255,.53);
+
+$radius: 15px;
