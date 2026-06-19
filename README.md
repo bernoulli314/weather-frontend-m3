@@ -8,7 +8,7 @@ Se intentó utilizar JavaScript y Bootstrap sin necesidad de pasar por jQuery.
 
 ## 🚀 Demo
 
-🔗 Repositorio: https://github.com/bernoulli314/weather-frontend-m2  
+🔗 Repositorio: https://github.com/bernoulli314/weather-frontend-m3
 🌐 Página web: https://bernoulli314.github.io/weather-frontend-m2/
 
 ---
@@ -24,9 +24,10 @@ Se intentó utilizar JavaScript y Bootstrap sin necesidad de pasar por jQuery.
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas|
 
 - HTML5
 - CSS3
 - Bootstrap 5
 - JavaScript
+- SCSS

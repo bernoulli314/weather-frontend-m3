@@ -12,20 +12,20 @@
         transform: scale(1.05);
     }
 
-    &__ss{
+    &--ss{
 
         @include m.planet-button(rgb(255, 152, 0), rgb(255, 87, 34));
 
 
     }
 
-    &__exo{
+    &--exo{
 
         @include m.planet-button(rgb(123, 31, 162), rgb(40, 53, 147));
 
     }
 
-    &__footer{
+    &--footer{
 
         @include m.planet-button(rgb(26, 3, 36), rgb(2, 4, 14));
         color: v.$text-color

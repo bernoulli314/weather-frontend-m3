@@ -1,7 +1,7 @@
 body {
-  background: rgb(245, 245, 245);
+  background: rgb(17, 12, 23);
   font-family: Consolas, sans-serif;
-  color: rgb(22, 22, 22);
+  color: white;
 }
 body::before {
   content: "";
@@ -19,7 +19,7 @@ body::before {
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   cursor: pointer;
-  color: rgb(22, 22, 22);
+  color: white;
   transition: all 0.3s ease;
 }
 .btn:hover {
@@ -33,41 +33,44 @@ body::before {
 .btn:hover {
   transform: scale(1.05);
 }
-.btn__ss {
+.btn--ss {
   background: linear-gradient(135deg, rgb(255, 152, 0), rgb(255, 87, 34));
   border: none;
 }
-.btn__ss:hover {
+.btn--ss:hover {
   box-shadow: 0 0 15px rgba(255, 152, 0, 0.6);
 }
-.btn__exo {
+.btn--exo {
   background: linear-gradient(135deg, rgb(123, 31, 162), rgb(40, 53, 147));
   border: none;
 }
-.btn__exo:hover {
+.btn--exo:hover {
   box-shadow: 0 0 15px rgba(123, 31, 162, 0.6);
 }
-.btn__footer {
+.btn--footer {
   background: linear-gradient(135deg, rgb(26, 3, 36), rgb(2, 4, 14));
   border: none;
 }
-.btn__footer:hover {
+.btn--footer:hover {
   box-shadow: 0 0 15px rgba(26, 3, 36, 0.6);
+}
+.btn--footer {
+  color: white;
 }
 
 .place-card {
   padding: 25px;
-  background: linear-gradient(135deg, rgb(245, 245, 245), rgb(255, 255, 255));
-  color: rgb(22, 22, 22);
+  background: linear-gradient(135deg, rgb(17, 12, 23), rgb(29, 11, 27));
+  color: white;
   text-align: center;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 35, 133, 0.4);
   transition: transform 1.3s, box-shadow 1.3s;
 }
 .place-card:hover {
   transform: translateY(-20px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 15px 30px rgba(0, 110, 255, 0.53);
 }
 .place-card__name {
   font-size: 2rem;
@@ -81,7 +84,7 @@ body::before {
 .place-card__temp {
   font-size: 2rem;
   font-weight: bold;
-  color: rgb(0, 119, 182);
+  color: rgb(135, 206, 250);
   margin-bottom: 10px;
 }
 .place-card__status {
@@ -98,7 +101,7 @@ body::before {
   margin-bottom: 1rem;
   position: relative;
   z-index: 1;
-  color: rgb(22, 22, 22);
+  color: white;
 }
 
 .weather-content__titulo {
@@ -109,7 +112,7 @@ body::before {
   z-index: 1;
 }
 .weather-content__texto {
-  color: rgb(22, 22, 22);
+  color: white;
 }
 .weather-content__input {
   max-width: 600px;
@@ -120,8 +123,8 @@ body::before {
 }
 
 .aside {
-  background: rgb(255, 255, 255);
-  color: rgb(22, 22, 22);
+  background: rgb(29, 11, 27);
+  color: white;
 }
 .aside__titulo {
   text-align: center;
@@ -139,7 +142,7 @@ body::before {
 
 .footer__texto {
   font-size: 0.9rem;
-  color: rgb(22, 22, 22);
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

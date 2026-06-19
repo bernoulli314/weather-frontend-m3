@@ -19,43 +19,6 @@ document.addEventListener(
 
     if(planeta){
 
-        detalle.innerHTML=`
-
-        <h1>
-
-            ${planeta.icono}
-            ${planeta.nombre}
-
-        </h1>
-
-        <p>
-            💧 Humedad:
-            ${planeta.humedad}
-        </p>
-
-        <p>
-            💨 Viento:
-            ${planeta.viento}
-        </p>
-
-        <p>
-            ⚖️ Gravedad:
-            ${planeta.gravedad}
-        </p>
-
-        <p>
-            🪨 Composición:
-            ${planeta.composicion}
-        </p>
-
-        <p>
-
-            ${planeta.descripcion}
-
-        </p>
-
-        `;
-
         zona_img.innerHTML=`
         <img
         max-width: 300px;
@@ -66,6 +29,43 @@ document.addEventListener(
         >
         `
 
+        detalle.innerHTML=`
+
+        <h1 class="weather-content__titulo">
+
+            ${planeta.icono}
+            ${planeta.nombre}
+
+        </h1>
+
+        <p class="weather-content__texto">
+            💧 Humedad:
+            ${planeta.humedad}
+        </p>
+
+        <p class="weather-content__texto">
+            💨 Viento:
+            ${planeta.viento}
+        </p>
+
+        <p class="weather-content__texto">
+            ⚖️ Gravedad:
+            ${planeta.gravedad}
+        </p>
+
+        <p class="weather-content__texto">
+            🪨 Composición:
+            ${planeta.composicion}
+        </p>
+
+        <p class="weather-content__texto">
+
+            ${planeta.descripcion}
+
+        </p>
+
+        `;
+
 
         planeta.pronostico.forEach(
         dia=>{
@@ -74,23 +74,23 @@ document.addEventListener(
 
             <div class="col">
 
-                <div class="card h-100">
+                <div class="card h-100 place-card">
 
-                    <div class="card-body text-center">
+                    <div class="card-body text-center place-card__body">
 
-                        <h3>
+                        <h3 class="place-card__name">
                             ${dia.dia}
                         </h3>
 
-                        <div class="display-4">
+                        <div class="display-4 place-card__icon">
                             ${dia.icono}
                         </div>
 
-                        <h4>
+                        <h4 class="place-card__temp">
                             ${dia.temp}
                         </h4>
 
-                        <p>
+                        <p class="place-card__status">
                             ${dia.estado}
                         </p>
 
